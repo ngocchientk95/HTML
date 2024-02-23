@@ -16,7 +16,7 @@
         width: 35%;
         box-shadow: 0px 0px 20px 10px rgb(105, 105, 153);
     }
-    div{
+    .main{
         margin-left: 20px;
         margin-bottom: 20px;
     }
@@ -26,20 +26,33 @@
     input{
         margin-bottom: 10px;
     }
+    .submit{
+        margin-left: 20px;
+    }
+    .many:hover {
+        background-color: blueviolet;
+    }
 </style>
 <body>
     <form action="#">
-        <div>
+        <div class="main">
         <h1>Oder Form</h1>
         <label for="buy">what would you like to buy?</label><br>
         <select name="buy" id="" style="width: 20%;">
             <option value="">A</option>
             <option value="">B</option>
         </select><br>
+        <div class="many">
         <label for="oder">How many would you like to order</label><br>
         <input type="radio" name="order" checked><span> 1-$10</span><br>
         <input type="radio" name="order" ><span> 2-$20</span><br>
         <input type="radio" name="order"><span> 3-$25</span><br>
+        </div>
+
+        <label for="oder">what would you like to buy</label><br>
+        <input type="checkbox" name="order" checked><span> Fish</span><br>
+        <input type="checkbox" name="order" ><span> shrimp</span><br>
+        <input type="checkbox" name="order"><span> crab</span><br>
 
         <label for="name">Name *</label><br>
         <input type="text" placeholder="First name" style="width: 35%;" ><input type="text" placeholder="Last Name" style="width: 35%;"><br>
@@ -52,9 +65,8 @@
 
         <label for="name">Name *</label><br>
         <input type="password" placeholder="password" style="width: 35%;" ><br>
-        
-        <input type="button" value="Submit">
-    </div>
+        </div>
+        <input class="submit" type="button" value="Submit">
     </form>
 </body>
 </html>
