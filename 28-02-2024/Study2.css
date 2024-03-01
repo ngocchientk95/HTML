@@ -39,3 +39,6 @@ th, td {
 .text2, .text3 {
 width: 95%;
 }
+button {
+    margin-left: 30%;
+}
