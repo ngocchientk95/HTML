@@ -28,7 +28,14 @@ input {
 }
 table {
     width: 100%;
+    margin-top: 20px;
 }
 th, td {
     text-align: center;
+}
+.text1 {
+    width: 50%;
+}
+.text2, .text3 {
+width: 95%;
 }
