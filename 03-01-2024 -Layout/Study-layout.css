@@ -1,11 +1,40 @@
 #head {
     background-color: rgb(195, 113, 12);
-    height: auto;
 }
 #head img{
     width: 100px;
     height: 100px;
 }
 #head-link {
+    clear: left;
+    height: 30px;
+}
+#head-link ul {
+    width: 600px;
+    list-style-type: none;
+    margin: auto;
+}
+#head-link li {
+    display: inline-block;
+    margin-left: 10px;
+}
+#left {
+    width: 30%;
+    overflow: scroll;
+}
+#left img {
+    width: 90%;
+}
+.div1 {
+    height: 30%;
+    width: 100%;
+}
+#content {
+    width: 70%;
+}
+#content, #left {
+    float: left;
+}
+#footer {
     clear: left;
 }
