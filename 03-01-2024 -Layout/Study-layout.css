@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
 #head {
     background-color: rgb(195, 113, 12);
 }
@@ -26,10 +31,11 @@
     width: 90%;
 }
 .div1 {
-    height: 30%;
-    width: 100%;
+    margin: 5%;
+    background-color: blanchedalmond;
 }
 #content {
+    background-color: beige;
     width: 70%;
 }
 #content, #left {
