@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.cap2, .cap3 {
+    display: none;
+}
+.cap13:hover .cap2{
+    display: block;
+}
+.cap23:hover .cap3{
+    display: block;
+}
+.cap13 {
+    position: relative;
+}
+.cap2 {
+    position: absolute;
+    left: 5%;
+    top: 4%;
+}
+</style>
+<body>
+    <ul class="cap1" type="none">
+        <li>cấp 1</li>
+        <li>cấp 1</li>
+        <li>cấp 1</li>
+        <li class="cap13"> cấp 1
+            <ul class="cap2" type="none">
+                <li>cấp 2</li>
+                <li>cấp 2</li>
+                <li>cấp 2</li>
+                <li class="cap23">cấp 2
+                    <ul class="cap3" type="none">
+                        <li>cấp 3</li>
+                        <li>cấp 3</li>
+                        <li>cấp 3</li>
+                        <li>cấp 3</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
