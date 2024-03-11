@@ -45,3 +45,24 @@
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
 }
+.logo { 
+    float: left;
+    height: 40px;
+}
+.toolbar { 
+    float: left;
+}
+.personal-infomation{ 
+    float: left;
+}
+.imglogo {
+    height: 40px;
+    margin: 20px;
+}   
+.tootbar td th {
+    height: 20px;
+}
+.left {
+    background-color: beige;
+    clear: both;
+}
