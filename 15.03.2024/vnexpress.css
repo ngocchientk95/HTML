@@ -30,7 +30,7 @@ ul {
     list-style-type: none;
 }
 li {
-    margin: 20px;
+    margin: 10px;
 }
 /* main */
 main {
@@ -50,6 +50,7 @@ main {
 }
 .impor-text-top {
     display: flex;
+    margin: 15px 0;
 }
 .impor-text-top-img {
     flex-basis: 70%;
@@ -58,19 +59,34 @@ main {
     flex-basis: 30%;
     padding: 10px;
 }
-.impor-text-top-content p {
-    font-size: small;
-}
 .impor-text-top-img img {
     width: 100%;
 }
-
 .info-text-buttom {
     display: flex;
 }
 .info-text-buttom-1, .info-text-buttom-2, .info-text-buttom-3 {
     flex-basis: 33%;
+    margin: 15px;
 }
 .info-text-buttom-1 img {
     width: 100%;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.information{
+    font-size: medium;
+    color: gray;
+}
+h3 {
+    margin: 10px 0;
+}
+
+.thoisu1 {
+    display: none;
+}
+.thoisu:hover .thoisu1 {
+    display: block;
 }
