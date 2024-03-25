@@ -7,3 +7,7 @@ border: 1px solid black;
     box-shadow: brown inset;
     border: 1px solid blue;
 }
+.author-info {
+    height: 500px;
+    width: 300px;
+}
