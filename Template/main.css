@@ -1,7 +1,151 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-header .header__top-logo {
-container: ;
+:root {
+    --c-color: rgb(0, 225, 214);
+}
+
+/* header */
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header__logo img{
+    width: 200px;
+    height: 40px;
+}   
+
+.header__top{
+    margin: 20px 0;
+}
+
+.nav__link {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-left: 15px;
+    color: black;
+}
+
+.nav__link--btn {
+    border: 1px solid var(--c-color);
+    color: var(--c-color);
+    padding: 5px 10px;
+}
+
+.header__banner {
+    background-image: url(images/slider.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+    height: 350px;
+}
+
+.header__title {
+    padding: 50px 0 20px 0;
+    color: white;
+    text-transform: uppercase;
+}
+
+.header__subtitle {
+    padding: 0 300px;
+    color: white;
+}
+
+.header__paragraph {
+    color: white;
+    padding: 15px 350px;
+
+}
+
+/* full-container */
+
+.event {
+    margin: 30px ;
+}
+
+.event__next-event {
+    color: var(--c-color);
+}
+
+.event__timing {
+    color: black;
+    text-decoration: none;
+}
+
+.event__btn {
+    background-color: var(--c-color);
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* collaborate */
+
+.block-title {
+    margin: 30px 0;
+}
+
+.collaborate__logo {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+.collaborate__subtitle {
+    margin: 5px;
+}
+
+.collaborate__paragraph {
+    margin: 20px;
+}
+
+.collaborate__link {
+    border: 2px solid var(--c-color);
+    text-decoration: none;
+    color: var(--c-color);
+    padding: 10px 35px;
+    margin-top: 10px;
+}
+
+
+/* clearfix */
+
+.full-container {
+    margin: 40px 0;
+}
+.mission__text {
+    background-color: rgba(233, 233, 198, 0.626);
+}
+
+.mission {
+    margin: 20px 0;
+}
+
+.mission__icon-backgroud {
+    border-radius: 50%;
+    background-color: var(--c-color);
+    padding: 30px;
+}
+
+.mission__title {
+    margin:15px 0;
+    color: var(--c-color);
+}
+
+/* footer */
+
+footer {
+    background-color: rgba(12, 1, 18, 0.5);
+}
+
+.footer__copyright {
+    padding: 20px 0;
+}
+
+.footer__copyright--link {
+    color: var(--c-color);
+    text-decoration: none;
 }
