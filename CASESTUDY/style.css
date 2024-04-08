@@ -5,38 +5,61 @@
 }
 
 header{
-    background-color: rgb(2, 2, 93);
-    height: 200px;
+    background-color: #23085a;
+    height: 150px;
 }
 
+a {
+    text-decoration: none;
+}
 .header1 {
-    padding:0 200px;
+    padding:0 250px;
 }
 
 .header__banner-1 {
-    text-align: center;
+    text-align: right;
 } 
 
-.header__banner-2 {
+.header__banner-Link1 {
     display: inline-block;
     background-color:aliceblue;
+    padding: 10px;
+
 }
 
 .header__nav {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    margin: 60px 0;
+    margin: 25px 0;
+}
+
+.header__nav-slogan {
+    color: aqua;
 }
 
 .header__nav-li {
     display: inline-block;
+    margin: 0 7px;
 }
 
+.header__nav-link {
+    color: aliceblue;
+}
 .header__navbar {
-    text-align: center;
+    text-align: left;
 }
 .herder-navbar-li {
     display: inline-block;
     background-color: aliceblue;
+    padding: 11px;
+}
+
+main {
+    display: flex;
+    margin: 0 250px;
+}
+
+.section__inf1 {
+    display: flex;
 }
