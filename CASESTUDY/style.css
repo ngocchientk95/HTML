@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: rgb(2, 2, 93);
+    height: 200px;
+}
+
+.header1 {
+    padding:0 200px;
+}
+
+.header__banner-1 {
+    text-align: center;
+} 
+
+.header__banner-2 {
+    display: inline-block;
+    background-color:aliceblue;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 60px 0;
+}
+
+.header__nav-li {
+    display: inline-block;
+}
+
+.header__navbar {
+    text-align: center;
+}
+.herder-navbar-li {
+    display: inline-block;
+    background-color: aliceblue;
+}
