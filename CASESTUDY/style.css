@@ -2,6 +2,11 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family:Arial, sans-serif;;
+}
+
+a {
+    text-decoration: none;
 }
 
 header{
@@ -9,57 +14,67 @@ header{
     height: 150px;
 }
 
-a {
-    text-decoration: none;
-}
 .header1 {
-    padding:0 250px;
+    padding: 0 250px;
 }
 
+/* banner */
 .header__banner-1 {
     text-align: right;
-} 
+}
 
-.header__banner-Link1 {
-    display: inline-block;
-    background-color:aliceblue;
+.header__banner-link {
+    background-color: aliceblue;
     padding: 10px;
+    display: inline-block;
+}
 
+/* logo + slogan */
+
+
+
+
+
+.header__nav-slogan {
+    color: aqua;
+    font-size: 20px;
 }
 
 .header__nav {
     display: flex;
     justify-content: space-between;
-    text-align: center;
-    margin: 25px 0;
+    margin: 6px 0;
 }
 
-.header__nav-slogan {
-    color: aqua;
+.header__nav2-li2 {
+    margin: 0 15px;
 }
-
-.header__nav-li {
-    display: inline-block;
-    margin: 0 7px;
-}
-
-.header__nav-link {
+.header__nav2-link {
     color: aliceblue;
+    text-decoration: none;
 }
-.header__navbar {
+
+/* navbar */
+
+.navbar__nav{
+    padding: 0px;
+    margin: 0px;
+}
+.navbar__nav1 {
     text-align: left;
+    padding: 0px;
 }
-.herder-navbar-li {
+.navbar-link {
     display: inline-block;
     background-color: aliceblue;
-    padding: 11px;
+    padding: 10px;
 }
 
-main {
-    display: flex;
-    margin: 0 250px;
-}
 
-.section__inf1 {
-    display: flex;
+/* section1 */
+
+.section__inf1-text {
+    justify-content: center;
+    width: 80%;
+    height: 80%;
 }
