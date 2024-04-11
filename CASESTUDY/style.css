@@ -34,7 +34,9 @@ header{
     background-color: aliceblue;
     padding: 13px 20px;
     display: inline-block;
-    
+}
+.header__banner-link:hover {
+    background-color: aqua;
 }
 
 /* logo + slogan */
@@ -68,14 +70,32 @@ header{
 }
 .navbar__nav1 {
     text-align: left;
-    padding: 5px 0;
 }
 .navbar-link {
     display: inline-block;
     background-color: aliceblue;
     padding: 10px;
 }
-
+.navbar-link:hover {
+    background-color: aqua;
+}
+.navbar-link-1 {
+    position: relative;
+}
+.navbar-link-inf {
+    display: none;
+}
+.navbar-link-inf li {
+    padding: 10px 0;
+}
+.navbar-link-1:hover .navbar-link-inf{
+    display: block;
+    position: absolute;
+    background-color: aqua;
+    width: 400px;
+    padding-top: 10px;
+    left: -2px;
+}
 /* main */
 main h2 {
     color: #23085a;
