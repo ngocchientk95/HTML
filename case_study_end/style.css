@@ -17,13 +17,10 @@ a:hover {
 
 header{
     background-color: #23085a;
-    height: 150px;
-    font-size: 14px;
+    height: 30%;
+    font-size: 13px;
 }
 
-.header1 {
-    margin: 0 15%;
-}
 
 /* banner */
 .header__banner-1 {
@@ -32,7 +29,12 @@ header{
 
 .header__banner-link {
     background-color: aliceblue;
-    padding: 13px 20px;
+    padding: 5px 10px;
+    display: inline-block;
+}
+.header__banner-link1 {
+    background-color: aliceblue;
+    padding: 5px 10px;
     display: inline-block;
 }
 .header__banner-link:hover {
@@ -74,7 +76,7 @@ header{
 .navbar-link {
     display: inline-block;
     background-color: aliceblue;
-    padding: 10px;
+    padding: 5px;
 }
 .navbar-link:hover {
     background-color: aqua;
@@ -101,9 +103,7 @@ main h2 {
     color: #23085a;
     margin: 40px 0 20px 0;
 }
-.main1 {
-    margin: 0 15%;
-}
+
 main hr {
     color: #23085a;
     height: 50px;
@@ -176,9 +176,7 @@ footer {
     background-color: #23085a;
     color: #c2cbce;
 }
-.footer1 {
-    margin: 0 15%;
-}
+
 footer a {
     color: #c2cbce;
 }
@@ -203,4 +201,34 @@ footer ul {
     display: inline-block;
     padding: 0 10px;
     border-left: #c2cbce solid ;
+}
+.navbar-sm {
+    display: none;
+}
+
+/*  máy tính bảng */
+@media screen and (max-width:768px)  {
+    .header__banner-link {
+        display: none;
+    }  
+    .navbar__nav {
+        display: none;
+    }
+    .navbar-sm {
+        display: block;
+    }
+    .navbar__sm-link {
+        display: none;
+        background-color: aliceblue;
+        width: 60%;
+    }
+    .header__logo {
+        display: none;
+    }
+    .navbar-sm-ul {
+        background-color: aliceblue;
+    }
+    .navbar-sm-ul:hover .navbar__sm-link{
+        display: block;
+    }
 }
