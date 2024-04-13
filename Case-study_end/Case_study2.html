@@ -35,7 +35,7 @@
 
                 <div class="header__list col-md-4">
                     <ul class="header__list-ul" type="none">
-                        <li class="header__list-1"><a href=""><img src="https://metruyencv.com/assets/images/new.png?40131" alt="">Đăng truyện</a></li>
+                        <li class="header__list-1"><a href=""><img class="header__list-icon" src="https://metruyencv.com/assets/images/new.png?40131" alt="">Đăng truyện</a></li>
                         <li class="header__list-1"><a href="">Đăng nhập</a></li>
                         <li class="header__list-1"><a href="">Đăng ký</a></li>
                     </ul>
@@ -45,38 +45,599 @@
     </header>
     <main>
         <img class="content__img" src="data:image/jpeg;base64,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" alt="">
-        <section class="container">
+        <!-- section-1 -->
+        <section class="section1 container">
             <div class="page__content row">
-                <div class="col-md-8 col-12">
+                <div class="col-lg-8 col-md-12 col-12">
                     <div class="container">
-                        <div class="col-md-5">
-                            <div>
+                        <div class="section1-row row">
+                            <div class="secton1-content col-md-12 d-flex justify-content-between">
+                                <div class="section1__content-title">
                                 <h5>Biên tập viên đề cử</h5>
+                                </div>
+                                <div class="section1__content-click">
+                                    <a href=""><h5>xem tất cả</h5></a>
+                                </div>
                             </div>
-                            <div class="section1__story">
+
+                            <div class="col-md-6 col-12">
+                                <div class="section1__story d-flex">
+                                    <div class="">
+                                        <a href=""><img class="section1__img" src="https://static.cdnno.com/poster/deu-trung-sinh-ai-thi-cong-chuc-a/150.jpg?1709718058" alt=""></a>
+                                    </div>
+                                    <div class="section1__inf">
+                                        <a href="" class="section1__content">Đều trùng sinh ai thi công chức A</a>
+                                        <div class="section1__story-inf">Tỉnh trực công chức Trần Trứ ngoài ý muốn trùng sinh chính mình lớp 12 một năm kia.</div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="section1__author">
+                                                <div><i class="fa-solid fa-marker"></i>Liễu Ngạn Hoa</div>
+                                            </div>
+                                            <div class="section1__category">
+                                                <a class="category" href="">Đô thị</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-12">
+                                <div class="section1__story d-flex">
+                                    <div class="">
+                                        <a href=""><img class="section1__img" src="https://static.cdnno.com/poster/ky-huyen-lanh-chua-tu-khai-thac-ky-si-bat-dau/150.jpg?1711971067" alt=""></a>
+                                    </div>
+                                    <div class="section1__inf">
+                                        <div >
+                                            <a href="" class="section1__content">Kỳ Huyễn Lãnh Chúa: Từ Khai Thác Kỵ Sĩ</a>
+                                            <div class="section1__story-inf">Vương quốc chiến tranh càng ngày càng nghiêm trọng, Bắc Địa người thú rục rịch.</div>
+                                        </div>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="section1__author">
+                                                    <div><i class="fa-solid fa-marker"></i>Nhân Sinh Nhược</div>
+                                                </div>
+                                                <div class="section1__category">
+                                                    <a class="category" href="">Huyền huyễn</a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                           <!-- hrr -->
+
+                            <div class="col-md-6 col-12">
+                                <div class="section1__story d-flex">
+                                    <div class="">
+                                        <a href=""><img class="section1__img" src="https://static.cdnno.com/poster/quang-am-chi-ngoai/150.jpg?1655013821" alt=""></a>
+                                    </div>
+                                    <div class="section1__inf">
+                                        <a href="" class="section1__content">Quang âm chi ngoại</a>
+                                        <div class="section1__story-inf">Thiên địa là vạn vật chúng sinh khách xá, quang âm là từ xưa tới nay khách qua</div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="section1__author">
+                                                <div><i class="fa-solid fa-marker"></i>Nhĩ căn</div>
+                                            </div>
+                                            <div class="section1__category">
+                                                <a class="category" href="">Tiên hiệp</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-12">
+                                <div class="section1__story d-flex">
+                                    <div class="">
+                                        <a href=""><img class="section1__img" src="https://static.cdnno.com/poster/dau-la-nhin-ta-nhat-ky-cac-nang-dien-cuong-bat-hack/150.jpg?1708843405" alt=""></a>
+                                    </div>
+                                    <div class="section1__inf">
+                                        <div >
+                                            <a href="" class="section1__content">Đấu la: Nhìn Ta Thật Kỹ</a>
+                                            <div class="section1__story-inf">Tô Trần xuyên việt Đấu La đại lục, kích hoạt viết nhật ký liền có thể biến cường kim thủ</div>
+                                        </div>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="section1__author">
+                                                    <div><i class="fa-solid fa-marker"></i>Tựu Thị Hỉ Hoan</div>
+                                                </div>
+                                                <div class="section1__category">
+                                                    <a class="category" href="">Đồng nhân</a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                           <!-- hrr -->
+
+                           <div class="col-md-6 col-12">
+                                <div class="section1__story d-flex">
+                                    <div class="">
+                                        <a href=""><img class="section1__img" src="https://static.cdnno.com/poster/buc-ta-trong-sinh-dung-khong/150.jpg?1709280543" alt=""></a>
+                                    </div>
+                                    <div class="section1__inf">
+                                        <a href="" class="section1__content">Bức ta trọng sinh đúng không</a>
+                                        <div class="section1__story-inf">Tuổi trẻ tài cao Trình Trục tại trên mạng thấy được một vấn đề: "Nếu như cho ngươi một cái</div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="section1__author">
+                                                <div><i class="fa-solid fa-marker"></i> Ấu Nhi Viên Nhất Bả </div>
+                                            </div>
+                                            <div class="section1__category">
+                                                <a class="category" href="">Đô thị</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-12">
+                                <div class="section1__story d-flex">
+                                    <div class="">
+                                        <a href=""><img class="section1__img" src="https://static.cdnno.com/poster/ky-huyen-lanh-chua-tu-khai-thac-ky-si-bat-dau/150.jpg?1711971067" alt=""></a>
+                                    </div>
+                                    <div class="section1__inf">
+                                        <div >
+                                            <a href="" class="section1__content">Ngự thú chi vương</a>
+                                            <div class="section1__story-inf">Tại thời đại ngự thú mới tinh này, ai có thể trở thành hoàn toàn xứng đáng Ngự Thú Chi</div>
+                                        </div>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="section1__author">
+                                                    <div><i class="fa-solid fa-marker"></i>Khinh Tuyền Lưu Hưởng</div>
+                                                </div>
+                                                <div class="section1__category">
+                                                    <a class="category" href="">Đô thị</a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                       <!-- hrr -->
+
+                        <div class="col-md-6 col-12">
+                            <div class="section1__story d-flex">
                                 <div class="">
-                                    <a href=""><img class="section1__img" src="https://static.cdnno.com/poster/deu-trung-sinh-ai-thi-cong-chuc-a/150.jpg?1709718058" alt=""></a>
+                                    <a href=""><img class="section1__img" src="https://static.cdnno.com/poster/han-ngu-chi-quat-khoi/150.jpg?1585205109" alt=""></a>
                                 </div>
                                 <div class="section1__inf">
-                                    <a href="" class="section1__content">Đều trùng sinh ai thi công chức A</a>
-                                    <p>Tỉnh trực công chức Trần Trứ ngoài ý muốn trùng sinh chính mình lớp 12 một năm kia.</p>
-                                    <div class="section1__author">
-                                        <p>Liễu Ngạn Hoa</p>
+                                    <a href="" class="section1__content">Hàn ngu chi quật khởi</a>
+                                    <div class="section1__story-inf">Lee Mong Ryong cái này chính mình cho mình đặt tên nam nhân, tại nhiều nhiều giai nhân</div>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="section1__author">
+                                            <div><i class="fa-solid fa-marker"></i>Ngã Môn Đại Gia</div>
+                                        </div>
+                                        <div class="section1__category">
+                                            <a class="category" href="">Đô thị</a>
+                                        </div>
                                     </div>
-                                    <div class="section1__category">
-                                        <a class="category" href="">Đô thị</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-12">
+                            <div class="section1__story d-flex">
+                                <div class="">
+                                    <a href=""><img class="section1__img" src="https://static.cdnno.com/poster/than-tham-mo-hai-mat-ra-ta-bi-cong-o-phong-tham-van/150.jpg?1709005912" alt=""></a>
+                                </div>
+                                <div class="section1__inf">
+                                    <div >
+                                        <a href="" class="section1__content">Thần Thám : Mở Hai Mắt Ra , Ta Bị Còng </a>
+                                        <div class="section1__story-inf">Cấp thế giới trinh thám Trần Ích xuyên qua đến thế giới song song, phát hiện chính mình</div>
+                                    </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="section1__author">
+                                                <div><i class="fa-solid fa-marker"></i>Cần Phấn Quan Quan</div>
+                                            </div>
+                                            <div class="section1__category">
+                                                <a class="category" href="">Đô thị</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- media -->
+                <div class="media-row col-lg-4 col-md-12 col-12">
+                    <div class="secton1-content col-md-12 d-flex justify-content-between">
+                        <div class="section1__content-title">
+                            <h5>Đang đọc</h5>
+                        </div>
+                        <div class="section1__content-click">
+                            <a href=""><h5>xem tất cả</h5></a>
+                        </div>
+                    </div>
+
+                    <div class="media d-flex">
+                        <div>
+                            <img  class="media__img" src="https://static.cdnno.com/poster/ta-the-gioi-khac-la-hinh-thuc-game/150.jpg?1712490734" alt="">
+                        </div>
+                        <div class="media__inf">
+                            <a href="">Ta Thế Giới Khác Là Hình Thức Game</a>
+                            <p>Đã đọc: 0/58</p>
+                        </div>
+                    </div> 
+                    <div class="media d-flex">
+                        <div>
+                            <img  class="media__img" src="https://static.cdnno.com/poster/phan-phai-o-dai-ket-cuc-lai-tim-ta-lam-ke-chet-thay/150.jpg?1712932959" alt="">
+                        </div>
+                        <div class="media__inf">
+                            <a href="">Phản Phái: Ở Đại Kết Cục Lại Tìm Ta Làm Kẻ</a>
+                            <p>Đã đọc: 0/20</p>
+                        </div>
+                    </div> 
+                    <div class="media d-flex">
+                        <div>
+                            <img  class="media__img" src="https://static.cdnno.com/poster/deu-trung-sinh-ai-thi-cong-chuc-a/150.jpg?1709718058" alt="">
+                        </div>
+                        <div class="media__inf">
+                            <a href="">Đều Trùng Sinh Ai Thi Công Chức A</a>
+                            <p>Đã đọc: 0/79</p>
+                        </div>
+                    </div> 
+                    <div class="media d-flex">
+                        <div>
+                            <img  class="media__img" src="https://static.cdnno.com/poster/khong-cho-phep-tich-thu-ta-nhan-tich/150.jpg?1712416488" alt="">
+                        </div>
+                        <div class="media__inf">
+                            <a href="">Không Cho Phép Tịch Thu Ta Nhân Tịch</a>
+                            <p>Đã đọc: 0/289</p>
+                        </div>
+                    </div> 
+                    <div class="media d-flex">
+                        <div>
+                            <img  class="media__img" src="https://static.cdnno.com/poster/long-tuong-ban-nhuoc-muoi-van-tang-ta-luc-nhung-lay-troi/150.jpg?1712900802" alt="">
+                        </div>
+                        <div class="media__inf">
+                            <a href="">Long Tượng Bàn Nhược Mười Vạn Tầng, Ta Lực</a>
+                            <p>Đã đọc: 0/52</p>
+                        </div>
+                    </div> 
+
+                    <div class="secton1-content d-flex justify-content-between">
+                        <div class="section1__content-title">
+                            <h5>Hướng dẫn</h5>
+                        </div>
+                        <div class="section1__content-click">
+                            <a href=""><h5>xem tất cả</h5></a>
+                        </div> 
+                    </div>
+                    <div class=" col-md-12 d-flex">
+                        <ul class="regulations">
+                            <li><a href="">Tôi muốn xem điểm hâm mộ của mình, vào đâu để xem</a></li>
+                            <li><a href="">Quy định khi tặng Hoa</a></li>
+                            <li><a href="">Làm sao để tặng quà? Tặng hoa? Thả cảm xúc?</a></li>
+                            <li><a href="">Hoa tồn tại được bao lâu?</a></li>
+                            <li><a href="">Tôi còn thắc mắc khác?</a></li>
+                            <li><a href="">Tôi có thể chuyển Kẹo cho người khác dù người đó khô</a></li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        </section>
+
+        <!-- section-2 -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class=" section2-background col-md-4 col-12">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <!-- item-1 -->
+                                <div class="carousel-item active p-0">
+                                    <div class="section2-background card d-inline-block">
+                                        <div class="secton1-content d-flex justify-content-between">
+                                            <div class="section1__content-title">
+                                                <h5>Mới đăng</h5>
+                                            </div>
+                                            <div class="section1__content-click">
+                                                <a href=""><h5>xem tất cả</h5></a>
+                                            </div> 
+                                        </div>
+                                        <div class="card-img-top text-center">
+                                            <img src="https://static.cdnno.com/poster/tham-gia-tong-nghe-mot-bai-day-bien-gay-tram-cam-toan-vong/300.jpg?1712913847" class="card-img img-fluid border-radius p-4" alt="">
+                                        </div>
+                                        <div class="section2__introduce card-body text-center">
+                                            <h5>Tham Gia Tống Nghệ: Một Bài Đáy Biển Gây Trầm Cảm Toàn Võng!</h5>
+                                            <p class="section2__introduce-content">luyện chi danh đày đi biên cương! Nguy cơ thời khắc, Doanh Hoắc kích hoạt đế quốc đánh dấu hệ thống! Chỉ cần đánh dấu , là có thể biến cường! Đạp biến Lục Quốc , càng có thể thành tựu chí cao! Mở đầu lễ bao! Khen thưởng Nho Kiếm Tiên khuôn! Hàm Cốc Quan đánh dấu! Khen thưởng Vô Song Kiếm Ma Yến Thập Tam! . . . . Quan ngoại đánh dấu! Khen thưởng Đông Xưởng thế lực! Đại Tuyết Long Kỵ một ngày bình Hàn Thiên Hạ Kinh! Bãi sậy bên trong , Nguyệt Thần nhập mộng , muốn để cho Doanh Hoắc quy thuận Âm Dương gia! Ngày đó , Doanh Hoắc leo lên Lục Địa Kiếm Tiên! Tử khí ngút trời nối liền trời đất , chỉ thấy Vạn Kiếm đến chầu thiên hạ ...
+                                                Già Thiên Vạn Tộc Kiếm
+                                            Kiếm Hiệp
+                                            Tham Gia Tống Nghệ: Một Bài Đáy Biển Gây Trầm Cảm Toàn Võng!
+                                            Xuyên qua trở thành nghệ nhân Lý Vô Trần, tại yêu đương tống nghệ bên trên hát emo ca khúc, trực tiếp để người xem phá đại phòng! “Ta thật phục , chính hắn đàm luận ngọt ngào yêu đương, để cho chúng ta nghe loại này khúc?” “Treo chìm một vang, tiếc nuối rút lui.” “Đáy biển vừa ra, Quỷ Thần toàn khóc.” “Cùng mối tình đầu chia tay, Cẩu tử một khúc chấp mê bất ngộ, trực tiếp để cho ta khóc thành chó.” “Đuổi nữ thần mười năm, thẳng đến nghe được Cẩu tử phách lối, ta mới biết được ta hẳn là đi Gotham.” “Các huynh đệ các ngươi không có hiểu Cẩu tử dụng ý, ưa thích liền đi xông, đừng đợi nàng gả làm vợ người, lại nghe phương hướng ngược chuông!” “Nàng nhất định biết ta thích nhân thê, mới đi lấy chồng!” ...... Lý Vô Trần: Mọi người nhất định muốn ...
+                                                Lý Bao Tử
+                                            Đô Thị
+                                            Chư Thiên: Ta Thành Hoa Sơn Chưởng Môn
+                                            Một đạo hiện đại linh hồn sống lại đến thế giới võ hiệp, vốn định an tâm cẩu mệnh hèn mọn phát dục. Kết quả Nhạc Bất Quần chết rồi, Không thể giải
+                                            </p>
+                                        </div>
+                                        <div class="section2__introduce-author d-flex justify-content-between">
+                                            <div class="section1__author">
+                                                <div><i class="fa-solid fa-marker"></i>Lý Bao Tử</div>
+                                            </div>
+                                            <div class="section1__category">
+                                                <a class="category" href="">Đô thị</a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                        <button class="section2__introduce-button">Đọc ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- item-2 -->
+                                <div class="carousel-item p-0">
+                                    <div class="section2-background card d-inline-block ">
+                                        <div class="secton1-content d-flex justify-content-between">
+                                            <div class="section1__content-title">
+                                                <h5>Mới đăng</h5>
+                                            </div>
+                                            <div class="section1__content-click">
+                                                <a href=""><h5>xem tất cả</h5></a>
+                                            </div> 
+                                        </div>
+                                        <div class="card-img-top text-center">
+                                            <img src="https://static.cdnno.com/poster/chu-thien-ta-thanh-hoa-son-chuong-mon/300.jpg?1712911147" class="card-img img-fluid border-radius p-4" alt="">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5>Chư Thiên: Ta Thành Hoa Sơn Chưởng Môn</h5>
+                                            <p class="section2__introduce-content">
+                                                Một đạo hiện đại linh hồn sống lại đến thế giới võ hiệp, vốn định an tâm cẩu mệnh hèn mọn phát dục. Kết quả Nhạc Bất Quần chết rồi, Không thể giải
+                                            </p>
+                                        </div>
+                                        <div class="section2__introduce-author d-flex justify-content-between">
+                                            <div class="section1__author">
+                                                <div><i class="fa-solid fa-marker"></i>Thư Bút Nhất Phiến</div>
+                                            </div>
+                                            <div class="section1__category">
+                                                <a class="category" href="">Đồng nhân</a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <button class="section2__introduce-button">Đọc ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- item-3 -->
+                                <div class="carousel-item p-0">
+                                    <div class="section2-background card d-inline-block">
+                                        <div class="secton1-content d-flex justify-content-between">
+                                            <div class="section1__content-title">
+                                                <h5>Mới đăng</h5>
+                                            </div>
+                                            <div class="section1__content-click">
+                                                <a href=""><h5>xem tất cả</h5></a>
+                                            </div> 
+                                        </div>
+                                        <div class="card-img-top text-center">
+                                            <img src="https://static.cdnno.com/poster/gia-thien-khoi-dau-dinh-hon-hoa-lan-nhi/300.jpg?1712901835" class="card-img img-fluid border-radius p-4" alt="">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5>Già Thiên: Khởi Đầu Đính Hôn Hỏa Lân Nhi</h5>
+                                            <p class="section2__introduce-content ">
+                                                Gạt người trước lừa gạt mình! Ta xuyên qua thành Tiên Cổ còn sót lại Kỳ Lân, thức tỉnh hệ thống làm giả, tân thủ gói quà lớn ban thưởng Kỳ Lân Cổ
+                                            </p>
+                                        </div>
+                                        <div class="section2__introduce-author d-flex justify-content-between">
+                                            <div class="section1__author">
+                                                <div><i class="fa-solid fa-marker"></i>Hóa Phủ Đại Oản </div>
+                                            </div>
+                                            <div class="section1__category">
+                                                <a class="category" href="">Đồng nhân</a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <button class="section2__introduce-button">Đọc ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- item-4 -->
+                                <div class="carousel-item p-0">
+                                    <div class="section2-background card d-inline-block ">
+                                        <div class="secton1-content d-flex justify-content-between">
+                                            <div class="section1__content-title">
+                                                <h5>Mới đăng</h5>
+                                            </div>
+                                            <div class="section1__content-click">
+                                                <a href=""><h5>xem tất cả</h5></a>
+                                            </div> 
+                                        </div>
+                                        <div class="card-img-top text-center">
+                                            <img src="https://static.cdnno.com/poster/long-tuong-ban-nhuoc-muoi-van-tang-ta-luc-nhung-lay-troi/300.jpg?1712900802" class="card-img img-fluid border-radius p-4" alt="">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5>Long Tượng Bàn Nhược Mười Vạn Tầng, Ta Lực Nhưng Lay Trời</h5>
+                                            <p class="section2__introduce-content">
+                                                Vũ Dịch ngoài ý muốn xuyên qua Đại Thương thế giới, bắt đầu thu hoạch được Long Tượng Bàn Nhược Kinh, Long Tượng Bàn Nhược bởi vì người
+                                            </p>
+                                        </div>
+                                        <div class="section2__introduce-author d-flex justify-content-between">
+                                            <div class="section1__author">
+                                                <div><i class="fa-solid fa-marker"></i>Đại Phiên Thự</div>
+                                            </div>
+                                            <div class="section1__category">
+                                                <a class="category" href="">Huyền huyễn</a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <button class="section2__introduce-button">Đọc ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- item-5 -->
+                                <div class="carousel-item p-0">
+                                    <div class="section2-background card  d-inline-block">
+                                        <div class="secton1-content d-flex justify-content-between">
+                                            <div class="section1__content-title">
+                                                <h5>Mới đăng</h5>
+                                            </div>
+                                            <div class="section1__content-click">
+                                                <a href=""><h5>xem tất cả</h5></a>
+                                            </div> 
+                                        </div>
+                                        <div class="card-img-top text-center">
+                                            <img src="https://static.cdnno.com/poster/ta-mo-that-su-la-co-nhi-vien-khong-phai-sat-thu-duong/300.jpg?1712896539" class="card-img img-fluid border-radius p-4" alt="">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h5>Ta Mở Thật Sự Là Cô Nhi Viện, Không Phải Sát Thủ Đường</h5>
+                                            <p class="section2__introduce-content">
+                                                【 nhóm tượng + hệ thống + từ đầu + võ hiệp 】 Trần Diệp xuyên qua đến Đại Vũ Vương Triều, khóa lại cô nhi bồi dưỡng hệ thống. Chỉ cần bồi dưỡng 
+                                            </p>
+                                        </div>
+                                        <div class="section2__introduce-author d-flex justify-content-between">
+                                            <div class="section1__author">
+                                                <div><i class="fa-solid fa-marker"></i> Ngã Thị Ngưu Chư</div>
+                                            </div>
+                                            <div class="section1__category">
+                                                <a class="category" href="">Huyền huyễn</a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <button class="section2__introduce-button">Đọc ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 row">
+                        <div class="section2__story col-md-6 col-12">
+                            <div class="section1__story d-flex">
+                                <div class="">
+                                    <a href=""><img class="section1__img" src="https://static.cdnno.com/poster/dai-phan-phai-o-dai-ket-cuc-doat-nu-chu-lac-hong/150.jpg?1641731155" alt=""></a>
+                                </div>
+                                <div class="section1__inf">
+                                    <a href="" class="section1__content">Đại Phản Phái: Ở Đại Kết Cục Đoạt Nữ Chủ</a>
+                                    <div class="section1__story-inf">« mạng tiểu thuyết độc nhất vô nhị ký hợp đồng tiểu thuyết: Đại Phản Phái: Ở Đại Kết Cục Đoạt</div>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="section1__author">
+                                            <div><i class="fa-solid fa-marker"></i>Thủy Thanh</div>
+                                        </div>
+                                        <div class="section1__category">
+                                            <a class="category" href="">Huyền huyễn</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section2__story col-md-6 col-12">
+                            <div class="section1__story d-flex">
+                                <div class="">
+                                    <a href=""><img class="section1__img" src="https://static.cdnno.com/poster/he-thong-truoc-gio-kich-hoat-3-nam-the-nhung-mat-the-lai-chua-den/150.jpg?1702500228" alt=""></a>
+                                </div>
+                                <div class="section1__inf">
+                                    <a href="" class="section1__content">Hệ Thống Trước Giờ Kích Hoạt 3 Năm, Thế</a>
+                                    <div class="section1__story-inf">Mạt thế chưa hàng lâm, thế nhưng "Mạt thế cầu sinh hệ thống" lại trước giờ kích hoạt.« kí chủ</div>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="section1__author">
+                                            <div><i class="fa-solid fa-marker"></i>Cổ Đức Miêu Ninh</div>
+                                        </div>
+                                        <div class="section1__category">
+                                            <a class="category" href="">Đô thị</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section2__story col-md-6 col-12">
+                            <div class="section1__story d-flex">
+                                <div class="">
+                                    <a href=""><img class="section1__img" src="https://static.cdnno.com/poster/hang-son-vo-hiep/150.jpg?1711315121" alt=""></a>
+                                </div>
+                                <div class="section1__inf">
+                                    <a href="" class="section1__content">Hằng Sơn Võ Hiệp</a>
+                                    <div class="section1__story-inf">Bá khí bản: Một quyền Nghi Lâm.Manh manh bản:Nghi Lâm đứng tại trên nhà cao tầng, ngóng</div>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="section1__author">
+                                            <div><i class="fa-solid fa-marker"></i>Tây Thời Vũ</div>
+                                        </div>
+                                        <div class="section1__category">
+                                            <a class="category" href="">Kiếm hiệp</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section2__story col-md-6 col-12">
+                            <div class="section1__story d-flex">
+                                <div class="">
+                                    <a href=""><img class="section1__img" src="https://static.cdnno.com/poster/tu-chon-xuong-co-duyen-bat-dau-tu-tien-truong-sinh/150.jpg?1709963814" alt=""></a>
+                                </div>
+                                <div class="section1__inf">
+                                    <a href="" class="section1__content">Từ Chôn Xuống Cơ Duyên Bắt Đầu Tu Tiên</a>
+                                    <div class="section1__story-inf">【 thường ngày 】 【 chưa nóng 】 【 không hệ thống 】 【 bảo vật vô số 】 Lục Thời xuyên qua</div>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="section1__author">
+                                            <div><i class="fa-solid fa-marker"></i> Trà Phi</div>
+                                        </div>
+                                        <div class="section1__category">
+                                            <a class="category" href="">Huyền huyễn</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section2__story col-md-6 col-12">
+                            <div class="section1__story d-flex">
+                                <div class="">
+                                    <a href=""><img class="section1__img" src="https://static.cdnno.com/poster/type-moon-hy-lap-ta-that-khong-nghi-tro-thanh-anh-hung-a/150.jpg?1712144921" alt=""></a>
+                                </div>
+                                <div class="section1__inf">
+                                    <a href="" class="section1__content">Type Moon Hy Lạp, Ta Thật Không Nghĩ Trở</a>
+                                    <div class="section1__story-inf">Xuyên qua đến hình nguyệt(Type Moon) thế giới thần đại Hy Lạp, cũng biến thành Jason.Từ từ,</div>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="section1__author">
+                                            <div><i class="fa-solid fa-marker"></i>Hữu Duyên Vô Phân</div>
+                                        </div>
+                                        <div class="section1__category">
+                                            <a class="category" href="">Đồng nhân</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section2__story col-md-6 col-12">
+                            <div class="section1__story d-flex">
+                                <div class="">
+                                    <a href=""><img class="section1__img" src="https://static.cdnno.com/poster/vong-du-chi-ta-co-10-lan-toc-do-danh/150.jpg?1711686160" alt=""></a>
+                                </div>
+                                <div class="section1__inf">
+                                    <a href="" class="section1__content">Võng Du Chi Ta Có 10 Lần Tốc Độ Đánh</a>
+                                    <div class="section1__story-inf">【 mạng tiếng trungA cấp ký hợp đồng tác phẩm: Võng du chi ta có thập bội tốc độ đánh </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="section1__author">
+                                            <div><i class="fa-solid fa-marker"></i>Miêu hình bóng</div>
+                                        </div>
+                                        <div class="section1__category">
+                                            <a class="category" href="">Võng du</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                </div>
-                <div class="col-md-4 col-12">
-
+                    
                 </div>
             </div>
-        </section>   
+        </section> 
+        <hr>
     </main>
+
+    <!-- footer -->
+    <footer class="text-center">
+        <img class="" src="https://metruyencv.com/assets/images/logo.png?40131" alt="">
+        <p>Mê Truyện Chữ là nền tảng mở trực tuyến, miễn phí đọc truyện chữ được convert hoặc dịch kỹ lưỡng, do các converter và dịch giả đóng góp, rất nhiều truyện hay và nổi bật được cập nhật nhanh nhất với đủ các thể loại tiên hiệp, kiếm hiệp, huyền ảo ...</p>
+        <div class="d-flex justify-content-center">
+            <div class="text-center">
+                <i class="fa-brands fa-apple"></i>
+            </div>
+                
+            <div class="text-center">
+                <i class="fa-brands fa-google-play"></i>
+            </div>
+        </div>
+
+    </footer>
 </body> 
 </html>

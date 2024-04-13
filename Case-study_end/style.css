@@ -6,6 +6,9 @@
 a {
     text-decoration: none;
 }
+a:hover {
+    color:chocolate;
+}
 /* header */
 /* logo */
 .header__row {
@@ -17,19 +20,21 @@ a {
     padding: 0 5px;
 }
 .header-img {
-    width: 50px;
+    width: 30px;
 }
 .header__logo-2 {
     display: inline-block;
     padding: 0 5px;
+
 }
 .header__logo-3{
     display: inline-block; 
     padding: 0 5px; 
+
 }
 /* search */
 .header__search {
-    height: 30%;
+    height: 25%;
 }
 .header__button {
     border: 2px solid ;
@@ -42,7 +47,7 @@ a {
 }
 .header__input-1 {
     border: 0;
-    min-width: 300px;
+    width: 120px;
 }
 .header__icon {
     display: inline-block;
@@ -53,37 +58,48 @@ a {
     display: inline-block;
     padding: 0 6px;
 }
+.header__list-icon {
+    width: 20px;
+}
 
 /* main */
 /* content-img */
 .content__img {
     width: 100%;
     height: 400px;
-    position: relative;
 }
 /* section1 */
-.page__content {
-    border: 2px solid rgb(186, 80, 80);
-    border-radius: 5px;
+.section1 {
+    position: relative;
+    top: -100px;
+    background-color: aliceblue;
+    border-radius: 20px;
 }
+.section1__content-click{
+    display: none;
+    color: chocolate;
+}
+.section1-row:hover .section1__content-click {
+    display: block;
+}
+
+.media-row:hover .section1__content-click {
+    display: block;
+}
+
 h5 {
     margin: 15px 0;
 }
-.section1__story {
-    display: flex;
-}
 .section1__img {
-    width: 90px;
-}
-.section1__author { 
-    float: left;
+    width: 100%;
 }
 .section1__author p{
     padding: 3px 5px;
 }
 .section1__category {
-    float: left;
+    margin: 3px 0;
 }
+
 .section1__content {
     margin: 8px 5px;
 }
@@ -92,5 +108,58 @@ h5 {
     color: chocolate;
     padding: 2px 4px;
 }
+.section1__story-inf {
+    height: 100px;
+}
 .section1__inf {
+    margin: 0 10px;
+}
+
+/* media */
+.media {
+    margin: 10px 0;
+}
+.media__img {
+    width: 50px;
+}
+.media__inf {
+    margin: 0 10px;
+}
+
+/* regulations */
+.regulations li{
+    margin: 10px 0;
+}
+
+
+/* section-2 */
+.section2-background {
+    background-color: blanchedalmond;
+    border: 0;
+}
+.section2__introduce {
+    height: 200px;
+    overflow: hidden;
+}
+.section2__introduce-author {
+    margin: 20px 0;
+}
+
+.secton1-content {
+    padding: 0 20px;
+}
+.section2__introduce-button {
+    border-radius: 20px;
+    border: 1px solid white;
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    color: aliceblue;
+}
+.card-img {
+    width: 200px;
+}
+
+.section2__story {
+    background-color: aliceblue;
 }
