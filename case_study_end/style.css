@@ -30,6 +30,7 @@ header{
 .header__banner-link {
     background-color: aliceblue;
     padding: 5px 10px;
+    margin-top: 10px;
     display: inline-block;
 }
 .header__banner-link1 {
@@ -117,7 +118,7 @@ main hr {
 }
 
 .section__inf1 img {
-    width: 90%;
+    width: 100%;
     height: 100%;
 
 }
@@ -230,5 +231,22 @@ footer ul {
     }
     .navbar-sm-ul:hover .navbar__sm-link{
         display: block;
+    }
+}
+@media screen and (max-width:576px) {
+    .section1__iframe {
+        width: 100%;
+        
+    }
+}
+
+@media screen and (min-width:577px) and ( max-width:768px){
+    .section1__iframe {
+        width: 100%;
+    }
+
+    .section__inf1-text {
+        text-align: justify;
+        margin: 0;
     }
 }
